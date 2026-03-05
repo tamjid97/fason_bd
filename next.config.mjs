@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  images: {
+    domains: ["via.placeholder.com"], // 🔑 এখানে remote host add করা হলো
+  },
 };
 
 export default nextConfig;

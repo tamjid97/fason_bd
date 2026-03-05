@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Elegant Evening Gown",
+    "price": 120,
+    "color": "Red",
+    "size": ["S", "M", "L"],
+    "image": "https://via.placeholder.com/200x300?text=Red+Evening+Gown",
+    "category": "Evening Dress"
+  },
+  {
+    "id": 2,
+    "name": "Casual Summer Dress",
+    "price": 45,
+    "color": "Yellow",
+    "size": ["S", "M", "L", "XL"],
+    "image": "https://via.placeholder.com/200x300?text=Yellow+Summer+Dress",
+    "category": "Casual"
+  },
+  {
+    "id": 3,
+    "name": "Floral Midi Dress",
+    "price": 60,
+    "color": "Blue",
+    "size": ["M", "L"],
+    "image": "https://via.placeholder.com/200x300?text=Blue+Floral+Dress",
+    "category": "Casual"
+  },
+  {
+    "id": 4,
+    "name": "Cocktail Party Dress",
+    "price": 95,
+    "color": "Black",
+    "size": ["S", "M"],
+    "image": "https://via.placeholder.com/200x300?text=Black+Cocktail+Dress",
+    "category": "Party"
+  },
+  {
+    "id": 5,
+    "name": "Boho Maxi Dress",
+    "price": 80,
+    "color": "Green",
+    "size": ["M", "L", "XL"],
+    "image": "https://via.placeholder.com/200x300?text=Green+Boho+Dress",
+    "category": "Bohemian"
+  },
+  {
+    "id": 6,
+    "name": "Elegant Lace Dress",
+    "price": 130,
+    "color": "White",
+    "size": ["S", "M", "L"],
+    "image": "https://via.placeholder.com/200x300?text=White+Lace+Dress",
+    "category": "Evening Dress"
+  },
+  {
+    "id": 7,
+    "name": "Casual Shirt Dress",
+    "price": 55,
+    "color": "Pink",
+    "size": ["S", "M", "L", "XL"],
+    "image": "https://via.placeholder.com/200x300?text=Pink+Shirt+Dress",
+    "category": "Casual"
+  },
+  {
+    "id": 8,
+    "name": "Chic Bodycon Dress",
+    "price": 85,
+    "color": "Purple",
+    "size": ["S", "M"],
+    "image": "https://via.placeholder.com/200x300?text=Purple+Bodycon+Dress",
+    "category": "Party"
+  }
+]
