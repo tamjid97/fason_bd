@@ -3,72 +3,72 @@
     "id": 1,
     "name": "Elegant Evening Gown",
     "price": 120,
-    "color": "Red",
+    "color": "Crimson Red",
     "size": ["S", "M", "L"],
-    "image": "https://via.placeholder.com/200x300?text=Red+Evening+Gown",
-    "category": "Evening Dress"
+    "image": "/assets/img1.jpg",
+    "category": "Evening Wear"
   },
   {
     "id": 2,
-    "name": "Casual Summer Dress",
-    "price": 45,
-    "color": "Yellow",
-    "size": ["S", "M", "L", "XL"],
-    "image": "https://via.placeholder.com/200x300?text=Yellow+Summer+Dress",
-    "category": "Casual"
+    "name": "Midnight Velvet Blazer",
+    "price": 85,
+    "color": "Deep Blue",
+    "size": ["M", "L", "XL"],
+    "image": "/assets/img2.jpg",
+    "category": "Formal Wear"
   },
   {
     "id": 3,
-    "name": "Floral Midi Dress",
-    "price": 60,
-    "color": "Blue",
-    "size": ["M", "L"],
-    "image": "https://via.placeholder.com/200x300?text=Blue+Floral+Dress",
-    "category": "Casual"
+    "name": "Urban Leather Jacket",
+    "price": 150,
+    "color": "Onyx Black",
+    "size": ["S", "M", "L", "XL"],
+    "image": "/assets/img4.jpg",
+    "category": "Outerwear"
   },
   {
     "id": 4,
-    "name": "Cocktail Party Dress",
-    "price": 95,
-    "color": "Black",
-    "size": ["S", "M"],
-    "image": "https://via.placeholder.com/200x300?text=Black+Cocktail+Dress",
-    "category": "Party"
+    "name": "Floral Summer Sundress",
+    "price": 45,
+    "color": "Pastel Yellow",
+    "size": ["XS", "S", "M"],
+    "image": "/assets/img3.jpg",
+    "category": "Casual Wear"
   },
   {
     "id": 5,
-    "name": "Boho Maxi Dress",
-    "price": 80,
-    "color": "Green",
-    "size": ["M", "L", "XL"],
-    "image": "https://via.placeholder.com/200x300?text=Green+Boho+Dress",
-    "category": "Bohemian"
+    "name": "Classic Oxford Shirt",
+    "price": 55,
+    "color": "Arctic White",
+    "size": ["S", "M", "L", "XL", "XXL"],
+    "image": "/assets/img5.jpg",
+    "category": "Essentials"
   },
   {
     "id": 6,
-    "name": "Elegant Lace Dress",
-    "price": 130,
-    "color": "White",
-    "size": ["S", "M", "L"],
-    "image": "https://via.placeholder.com/200x300?text=White+Lace+Dress",
-    "category": "Evening Dress"
+    "name": "High-Waist Cargo Pants",
+    "price": 65,
+    "color": "Olive Green",
+    "size": ["28", "30", "32", "34"],
+    "image": "/assets/img6.jpg",
+    "category": "Streetwear"
   },
   {
     "id": 7,
-    "name": "Casual Shirt Dress",
-    "price": 55,
-    "color": "Pink",
-    "size": ["S", "M", "L", "XL"],
-    "image": "https://via.placeholder.com/200x300?text=Pink+Shirt+Dress",
-    "category": "Casual"
+    "name": "Bohemian Maxi Skirt",
+    "price": 70,
+    "color": "Terracotta",
+    "size": ["S", "M", "L"],
+    "image": "/assets/img9.jpg",
+    "category": "Boho Style"
   },
   {
     "id": 8,
-    "name": "Chic Bodycon Dress",
-    "price": 85,
-    "color": "Purple",
-    "size": ["S", "M"],
-    "image": "https://via.placeholder.com/200x300?text=Purple+Bodycon+Dress",
-    "category": "Party"
+    "name": "Premium Cashmere Sweater",
+    "price": 110,
+    "color": "Charcoal Gray",
+    "size": ["M", "L", "XL"],
+    "image": "/assets/img8.jpg",
+    "category": "Winter Collection"
   }
 ]
