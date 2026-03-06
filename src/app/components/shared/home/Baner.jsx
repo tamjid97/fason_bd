@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { ShoppingBag, ArrowRight } from "lucide-react";
 
 const Banner = () => {
@@ -62,15 +63,15 @@ const Banner = () => {
             transition={{ delay: 0.6 }}
             className="mt-6 flex flex-wrap gap-3"
           >
-            <button className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm md:text-base font-bold rounded-xl transition-all active:scale-95 shadow-lg shadow-blue-500/20">
+            <Link href="/products" className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm md:text-base font-bold rounded-xl transition-all active:scale-95 shadow-lg shadow-blue-500/20">
               <ShoppingBag size={18} />
               Shop Now
-            </button>
-            
-            <button className="hidden sm:flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white text-sm md:text-base font-bold rounded-xl backdrop-blur-md border border-white/20 transition-all">
+            </Link>
+
+            <Link href="/coming-soon" className="hidden sm:flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white text-sm md:text-base font-bold rounded-xl backdrop-blur-md border border-white/20 transition-all">
               Explore
               <ArrowRight size={18} />
-            </button>
+            </Link>
           </motion.div>
         </div>
 

@@ -2,7 +2,7 @@ import About from "@/app/components/shared/home/About";
 import Baner from "@/app/components/shared/home/Baner";
 import Contact from "@/app/components/shared/home/Contact";
 import Newsletter from "@/app/components/shared/home/Newsletter";
-import Products from "@/app/components/shared/home/products/page";
+import Products from "@/app/products/page";
 import Review from "@/app/components/shared/home/Review";
 import Image from "next/image";
 
