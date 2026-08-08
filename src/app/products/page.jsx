@@ -1,42 +1,82 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Heart, Star, ArrowRight, Loader2, ShoppingBag } from "lucide-react";
+import { Heart, Star, ArrowRight, ShoppingBag } from "lucide-react";
 import Link from "next/link";
 
+// ডেমো প্রডাক্টের তালিকা
+const demoProducts = [
+  {
+    _id: "1",
+    name: "Classic Denim Jacket",
+    category: "Outerwear",
+    price: 49.99,
+    image: "https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    _id: "2",
+    name: "Casual Oversized Hoodie",
+    category: "Streetwear",
+    price: 39.99,
+    image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    _id: "3",
+    name: "Minimalist Black T-Shirt",
+    category: "Basics",
+    price: 19.99,
+    image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    _id: "4",
+    name: "Slim Fit Chino Pants",
+    category: "Bottoms",
+    price: 45.00,
+    image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    _id: "5",
+    name: "Vintage Bomber Jacket",
+    category: "Outerwear",
+    price: 69.99,
+    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    _id: "6",
+    name: "Checkered Flannel Shirt",
+    category: "Casual Wear",
+    price: 34.99,
+    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    _id: "7",
+    name: "Urban Cargo Pants",
+    category: "Bottoms",
+    price: 52.00,
+    image: "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    _id: "8",
+    name: "Graphic Print Hoodie",
+    category: "Streetwear",
+    price: 42.50,
+    image: "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    _id: "9",
+    name: "Classic Summer Shorts",
+    category: "Bottoms",
+    price: 25.00,
+    image: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&q=80&w=800"
+  }
+];
+
 const Products = () => {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [showAll, setShowAll] = useState(false);
 
-  // ব্যাকএন্ড থেকে ডাটা ফেচ করা
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const res = await fetch("/api/products");
-        const data = await res.json();
-        setProducts(data);
-      } catch (error) {
-        console.error("Failed to fetch products", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchProducts();
-  }, []);
-
   // শুরুতে ৮টি দেখাবে, বাটন ক্লিক করলে সব দেখাবে
-  const displayedProducts = showAll ? products : products.slice(0, 8);
-
-  if (loading) {
-    return (
-      <div className="py-24 flex flex-col items-center justify-center bg-white dark:bg-gray-950">
-        <Loader2 className="animate-spin text-blue-600 mb-4" size={40} />
-        <p className="text-gray-500 font-bold animate-pulse uppercase tracking-widest text-xs">Loading Collection...</p>
-      </div>
-    );
-  }
+  const displayedProducts = showAll ? demoProducts : demoProducts.slice(0, 8);
 
   return (
     <section id="products" className="py-24 bg-white dark:bg-gray-950 transition-colors">
@@ -94,7 +134,7 @@ const Products = () => {
 
                 {/* Content Area */}
                 <div className="p-7">
-                  <p className="text-[10px] text-blue-600 font-black uppercase tracking-widest mb-1.5">{product.category || "Premium Wear"}</p>
+                  <p className="text-[10px] text-blue-600 font-black uppercase tracking-widest mb-1.5">{product.category}</p>
                   <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 truncate group-hover:text-blue-600 transition-colors">{product.name}</h3>
 
                   {/* Rating */}
@@ -124,7 +164,7 @@ const Products = () => {
         </div>
 
         {/* See More Button */}
-        {!showAll && products.length > 8 && (
+        {!showAll && demoProducts.length > 8 && (
           <div className="mt-16 text-center">
             <motion.button 
               initial={{ opacity: 0 }}
